@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="37" failures="8" errors="0" time="1.699">
-  <testsuite name="tests\films.spec.js" errors="0" failures="8" skipped="0" timestamp="2025-12-23T07:49:59" time="1.261" tests="37">
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.011">
+<testsuites name="jest tests" tests="40" failures="9" errors="0" time="2.408">
+  <testsuite name="tests\films.spec.js" errors="0" failures="9" skipped="0" timestamp="2025-12-23T12:05:55" time="1.907" tests="40">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.016">
     </testcase>
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return an array" time="0">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return an array" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array, not update the original one" time="0.001">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array, not update the original one" time="0.002">
     </testcase>
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array with the same length as the original one" time="0.001">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return an array" time="0.001">
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return an array" time="0">
     </testcase>
-    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array, not update the original one" time="0">
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array, not update the original one" time="0.001">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array with the movies from director" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be declared" time="0">
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be declared" time="0.001">
     </testcase>
     <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should return a number" time="0">
     </testcase>
     <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be different from NaN" time="0">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name=" should return the average score of movies selecting only the director films. With 2 decimals! " time="0.001">
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name=" should return the average score of movies selecting only the director films. With 2 decimals! " time="0">
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should be declared" time="0">
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return an array" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0.013">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0.02">
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should only return the title of the movies, each value should be a string" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return all of items when the array passed has fewer than 20 items" time="0">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return all of items when the array passed has fewer than 20 items" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should order them alphabetically." time="0.001">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should order them alphabetically." time="0">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return the top 20 after ordering them alphabetically." time="0">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return the top 20 after ordering them alphabetically." time="0.001">
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should be declared" time="0">
     </testcase>
@@ -51,12 +51,34 @@
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should order movies with the same year by their title, alphabetically" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="ADD YOUR CODE IN films.spec.js file" time="0.003">
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should be declared" time="0">
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return a number" time="0.004">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
-Expected: &quot;coffee&quot;
-Received: &quot;function&quot;
-    at Object.toBe (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:297:35)
+Expected: &quot;number&quot;
+Received: &quot;undefined&quot;
+    at Object.toBe (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:306:62)
+    at Promise.then.completed (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return a new value, not modify the original array" time="0">
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return the correct average for a single movie" time="0">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;toBe&apos;)
+    at Object.&lt;anonymous&gt; (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:318:8)
     at Promise.then.completed (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:231:10)
@@ -79,7 +101,7 @@ Received: &quot;function&quot;
 
 Expected: true
 Received: false
-    at Object.toBe (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:308:53)
+    at Object.toBe (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:352:53)
     at Promise.then.completed (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:231:10)
@@ -99,7 +121,7 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with duration as a number" time="0">
       <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
-    at Object.&lt;anonymous&gt; (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:316:41)
+    at Object.&lt;anonymous&gt; (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:360:41)
     at Promise.then.completed (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:231:10)
@@ -115,9 +137,9 @@ Received: false
     at runTest (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
     at Object.worker (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 31 minute movie" time="0.001">
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 31 minute movie" time="0">
       <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
-    at Object.&lt;anonymous&gt; (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:321:36)
+    at Object.&lt;anonymous&gt; (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:365:36)
     at Promise.then.completed (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:231:10)
@@ -135,7 +157,7 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 341 minute movie" time="0">
       <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
-    at Object.&lt;anonymous&gt; (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:326:36)
+    at Object.&lt;anonymous&gt; (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:370:36)
     at Promise.then.completed (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:231:10)
@@ -153,7 +175,7 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 2 hour movie" time="0.001">
       <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
-    at Object.&lt;anonymous&gt; (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:331:36)
+    at Object.&lt;anonymous&gt; (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:375:36)
     at Promise.then.completed (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:231:10)
@@ -171,12 +193,12 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return an array" time="0.001">
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return an array" time="0">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: true
 Received: false
-    at Object.toBe (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:342:59)
+    at Object.toBe (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:386:59)
     at Promise.then.completed (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:231:10)
@@ -199,7 +221,7 @@ Received: false
 
 Expected: [{&quot;director&quot;: &quot;Stanley Kubrick&quot;, &quot;duration&quot;: &quot;1h 28min&quot;, &quot;genre&quot;: [&quot;Drama&quot;, &quot;War&quot;], &quot;score&quot;: 8.4, &quot;title&quot;: &quot;Film2&quot;, &quot;year&quot;: 1957}]
 Received: undefined
-    at Object.toEqual (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:376:43)
+    at Object.toEqual (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\tests\films.spec.js:420:43)
     at Promise.then.completed (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\cebal\Desktop\Curso Programación 2025\Especialización\Sprint-3\node_modules\jest-circus\build\utils.js:231:10)

@@ -1,4 +1,4 @@
-// const movies = require("./data");
+const movies = require("./data");
 
 // Exercise 1: Get the array of all directors.
 function getAllDirectors(array) {
@@ -19,7 +19,7 @@ function moviesAverageOfDirector(array, director) {
   const result = array.filter((m) => m.director === director);
   const total = result.reduce((total, movie) => total + movie.score, 0);
   const average = total / result.length;
-  return average;
+  return Number(average.toFixed(2));
 }
 
 // Exercise 4:  Alphabetic order by title
@@ -48,13 +48,31 @@ function orderByYear(movies) {
 }
 
 // Exercise 6: Calculate the average of the movies in a category
-function moviesAverageByCategory() {}
+function moviesAverageByCategory(movies, category) {
+
+
+
+
+
+  
+}
 
 // Exercise 7: Modify the duration of movies to minutes
 function hoursToMinutes() {}
 
+
+
+
 // Exercise 8: Get the best film of a year
 function bestFilmOfYear() {}
+
+
+
+
+
+
+
+
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
