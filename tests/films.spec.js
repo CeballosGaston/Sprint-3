@@ -310,36 +310,37 @@ describe('Function "moviesAverageByCategory"', () => {
     const arr = [];
     expect(moviesAverageByCategory(movies, 'Drama')).not.toBe(arr);
   });
+
   it('should return the correct average for a single movie', () => {
     expect(
       moviesAverageByCategory(
         [{ title: 'MovieA', genre: 'Action', score: 8 }],
         'Action'
-      ).toBe(8)
-    );
+      )
+    ).toBe(8);
 
-    it('should return 0 if there are no movies with that genre', () => {
-      expect(
-        moviesAverageByCategory(
-          [{ title: 'MovieA', genre: 'Action' }],
-          'Drama'
-        )
-      ).toBe(0);
-    });
-
-    it('should calculate the average for multiple movies of the same genre', () => {
-      expect(
-        moviesAverageByCategory(
-          [
-            { title: 'MovieA', genre: 'Action', score: 8 },
-            { title: 'MovieB', genre: 'Action', score: 6 },
-            { title: 'MovieC', genre: 'Drama', score: 9 }
-          ],
-          'Action'
-        )
-      ).toBe(7);
-    });
+    
   });
+
+  it('should return 0 if there are no movies with that genre', () => {
+    expect(
+      moviesAverageByCategory([{ title: 'MovieA', genre: 'Action' }], 'Drama')
+    ).toBe(0);
+  });
+
+
+  it('should calculate the average for multiple movies of the same genre', () => {
+    expect(
+      moviesAverageByCategory(
+        [
+          { title: 'MovieA', genre: 'Action', score: 8 },
+          { title: 'MovieB', genre: 'Action', score: 6 },
+          { title: 'MovieC', genre: 'Drama', score: 9 }
+        ],
+        'Action'
+      )
+    ).toBe(7);
+});
 });
 
 // Exercise 7
